@@ -11,6 +11,7 @@ public class WeekendAssignment {
 public static void main(String [] args){
 		
 		// receive start input in string kybd_input_str
+		System.out.println("Enter start to begin program");
 		start_meth();
 		
 		//using do-while loop to run the method continuously
@@ -21,12 +22,12 @@ public static void main(String [] args){
 		}
 
 public static void start_meth() {
-	System.out.println("Enter start to begin program");
-
+	
 	Scanner kybd_inpt = new Scanner(System.in);
 	String kybd_input_str = kybd_inpt.nextLine();
+	
 	if(!kybd_input_str.equalsIgnoreCase(code_trigger_starter_str)) {
-		  //System.out.println("Sorry! Enter Start to begin program");
+	       System.out.println("Sorry! Enter Start to begin program");
 		    	start_meth();
 		    	}
 	}
