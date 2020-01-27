@@ -25,7 +25,7 @@ public static void start_meth() {
 
 	Scanner kybd_inpt = new Scanner(System.in);
 	String kybd_input_str = kybd_inpt.nextLine();
-	if(!kybd_input_str.equals(code_trigger_starter_str)) {
+	if(!kybd_input_str.equalsIgnoreCase(code_trigger_starter_str)) {
 		  //System.out.println("Sorry! Enter Start to begin program");
 		    	start_meth();
 		    	}
@@ -41,11 +41,11 @@ public static void start_meth() {
 		
 	//set condition using if and else statements
 			
-	if(!kybd_new_word.equals(code_trigger_ender_str)) {
+	if(!kybd_new_word.equalsIgnoreCase(code_trigger_ender_str)) {
 	    	System.out.println(kybd_new_word);
 	    }
 		else {// if user inputs "end" code has to terminate
-		     if (kybd_new_word.equals(code_trigger_ender_str)) {
+		     if (kybd_new_word.equalsIgnoreCase(code_trigger_ender_str)) {
 	    		
 	    		System.out.println("Program ended");
 	    		System.exit(0);
